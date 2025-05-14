@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: black;
+    color: white;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: black;
+    overflow: hidden;
+}
+
+.background-overlay {
+    position: absolute;
+    inset: 0;
+    background-image: url("https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=1920");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.4;
+    transition: opacity 0.7s;
+}
+
+.gradient-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.7));
+}
+
+.content {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    padding: 0 1rem;
+    max-width: 56rem;
+    margin: 0 auto;
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+}
+
+h1 {
+    font-size: clamp(2.5rem, 8vw, 4.5rem);
+    font-weight: 700;
+    color: white;
+    margin-bottom: 1rem;
+    letter-spacing: -0.02em;
+}
+
+.divider {
+    height: 1px;
+    width: 8rem;
+    margin: 1.5rem auto;
+    background-color: rgba(255,255,255,0.3);
+}
+
+h2 {
+    font-size: clamp(1.5rem, 4vw, 1.875rem);
+    color: rgb(209, 213, 219);
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+
+.description {
+    font-size: clamp(1.125rem, 3vw, 1.5rem);
+    color: rgb(209, 213, 219);
+    margin-bottom: 2rem;
+    line-height: 1.6;
+    max-width: 48rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.coming-soon {
+    font-size: clamp(1rem, 2.5vw, 1.125rem);
+    color: rgb(156, 163, 175);
+    font-weight: 300;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 2rem;
+    color: rgb(156, 163, 175);
+    font-size: 0.875rem;
+    z-index: 10;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 640px) {
+    .content {
+        padding: 0 1.5rem;
+    }
+}
