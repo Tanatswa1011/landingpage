@@ -3,36 +3,273 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tanatswa Phil Muganga - Coming Soon</title>
+    <title>Tanatswa Phil Muganga - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAABX0lEQVQ4jY2TvUoDQRSFz93ZmE0IWogBG1GLVOIjWFiYQrS0s7ERtBKfwMbCJ7ASX8DGQgvBwlYQRBAWYhEQf0BRs7uZOxY7k52N2ejpZu7cc+63c2eA/0JEQqXUqYhEWRwAMAxD7Xq9flStVneklC6ASwCxUmrXGHMSRVEEAE6n07O1Wm0fQALgxhizZ4w5bTabOyLiAXgWkXYYhjoIgvZsNrsTkY8gCNpKKRhj9pVS20qpQxHpAHgVkVYYhmFHKXUgIh0AbwA6xpjTIAjaAF5EpEWllNZaD4wxxyLSBfBORG0iOmPmPhH1mPmeiHpE1COiO2a+Z+YHZn5k5gdmvmXmG2a+YuYrZr5g5nNmPmPmU2Y+YeYBEfWJqDe3ICKfzPwG4JWIWszcIaKOtfaSmS+stRfW2nNr7Zm19tRae2KtHTDzMTP3/gxRRMbM/Mjrz8zMPSIaEVEiImP8Bb8KqHDg3GDpTwAAAABJRU5ErkJggg==">
 </head>
 <body>
-    <main>
-        <!-- Background with gradient overlay -->
-        <div class="background-overlay"></div>
-        
-        <!-- Gradient overlay -->
-        <div class="gradient-overlay"></div>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <i class="fas fa-bars menu-icon"></i>
+                <i class="fas fa-times close-icon"></i>
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="theme-toggle" aria-label="Toggle dark mode">
+                <i class="fas fa-moon"></i>
+            </button>
+        </nav>
+    </header>
 
-        <!-- Content -->
-        <div class="content">
-            <h1>Tanatswa Phil Muganga</h1>
-            <div class="divider"></div>
-            <h2>Computer Science Graduate 2025</h2>
-            <p class="description">
-                Experienced in Data Science, Machine Learning, Natural Language Processing, 
-                and cutting-edge technologies.
-            </p>
-            <p class="coming-soon">
-                Official portfolio website coming soon. Stay tuned for an exciting showcase of projects and innovations.
-            </p>
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm <span class="gradient-text">Tanatswa Phil Muganga</span></h1>
+            <p class="subtitle">Designer & Developer</p>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="#contact" class="btn btn-secondary">Contact Me</a>
+            </div>
+            <div class="hero-description">
+                <p>Passionate about building scalable systems and deep learning projects</p>
+                <p>Currently focused on Data Analysis and Software Development</p>
+            </div>
         </div>
+    </section>
 
-        <!-- Footer -->
-        <footer>
-            &copy; <script>document.write(new Date().getFullYear())</script> Tanatswa Phil Muganga • All rights reserved
-        </footer>
-    </main>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="section-container">
+            <h2 class="reveal">About Me</h2>
+            <div class="about-content reveal">
+                <p>I'm Tanatswa Muganga, a passionate Computer Scientist with expertise in software development, data analysis, and system design. My toolkit includes C++, Python, JavaScript, SQL/NoSQL databases, and cloud technologies, along with hands-on experience in machine learning, microservices, and full-stack development.</p>
+                
+                <p>I thrive on solving complex problems—whether it's building efficient algorithms, crafting responsive web applications like my CentralCleats e-commerce project, or creating practical tools like my web-based Quotation Generator. My academic background in Computer Science has given me strong foundations in data structures, AI, and system architecture, while my curiosity drives me to constantly learn and adapt to new technologies.</p>
+                
+                <p>When I'm not coding or analyzing data, you'll find me exploring new places or diving into stocks and forex markets, where I apply my analytical mindset to uncover trends and opportunities. Fluent in English and conversational in German, I enjoy collaborating across cultures to create innovative, user-centric solutions.</p>
+
+                <p>At Kloeckner, I've contributed to significant improvements in document analysis and process automation, reducing manual review time and improving extraction accuracy. My experience extends to operations and data analysis at Ripples Pure Water, where I led inventory management improvements and automated critical business processes.</p>
+            </div>
+
+            <h3 class="reveal">Skills & Expertise</h3>
+            <div class="skills-grid reveal">
+                <div class="skill-card">
+                    <h4>Programming</h4>
+                    <div class="skill-tags">
+                        <span>C++</span>
+                        <span>Python</span>
+                        <span>JavaScript</span>
+                        <span>TypeScript</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h4>Web & Database</h4>
+                    <div class="skill-tags">
+                        <span>HTML/CSS</span>
+                        <span>SQL</span>
+                        <span>MongoDB</span>
+                        <span>Git</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h4>Cloud & DevOps</h4>
+                    <div class="skill-tags">
+                        <span>AWS</span>
+                        <span>Linux/Unix</span>
+                        <span>Microservices</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h4>Data & ML</h4>
+                    <div class="skill-tags">
+                        <span>Machine Learning</span>
+                        <span>Data Mining</span>
+                        <span>R Studio</span>
+                        <span>Power BI</span>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="reveal">Experience</h3>
+            <div class="experience-grid reveal">
+                <div class="experience-card">
+                    <h4>Kloeckner</h4>
+                    <p class="experience-date">Data Analysis (2024 - Ongoing)</p>
+                    <ul>
+                        <li>Implemented document classification system reducing review time by 15 hours/week</li>
+                        <li>Developed automated Base64 encoding/decoding pipeline</li>
+                        <li>Created Excel-based tracking system with 100% accurate KA link generation</li>
+                    </ul>
+                </div>
+                <div class="experience-card">
+                    <h4>Ripples Pure Water</h4>
+                    <p class="experience-date">Operations & Data Analyst (2020 - 2021)</p>
+                    <ul>
+                        <li>Led inventory management overhaul reducing stockouts by 40%</li>
+                        <li>Automated customer billing system saving 25+ monthly work hours</li>
+                        <li>Developed predictive water usage models identifying 15% distribution losses</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="section-container">
+            <h2>Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Twitter Sentiment Analysis</h3>
+                    <p>Deep learning pipeline using LSTM & Word2Vec to classify sentiment in 30,000+ tweets with ~77% accuracy. Applied NLP techniques and built a Bidirectional LSTM model for brand monitoring.</p>
+                    <div class="project-highlights">
+                        <span>77% Accuracy</span>
+                        <span>30,000+ Tweets</span>
+                        <span>Bidirectional LSTM</span>
+                    </div>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>NLTK</span>
+                        <span>Deep Learning</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>International Football Analysis</h3>
+                    <p>Analyzed 150+ years of match data across top 5 international teams using statistical modeling. Applied logistic regression and ANOVA to identify significant factors affecting match outcomes.</p>
+                    <div class="project-highlights">
+                        <span>150+ Years Data</span>
+                        <span>Statistical Modeling</span>
+                        <span>Visual Reports</span>
+                    </div>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>Pandas</span>
+                        <span>Statistics</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>CentralCleats</h3>
+                    <p>E-commerce platform for football boots combining modern web development practices. Features seamless shopping experience with responsive design.</p>
+                    <div class="project-highlights">
+                        <span>E-commerce</span>
+                        <span>Responsive Design</span>
+                        <span>Modern UI</span>
+                    </div>
+                    <div class="project-tags">
+                        <span>JavaScript</span>
+                        <span>MongoDB</span>
+                        <span>CSS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CV Section -->
+    <section id="cv" class="cv">
+        <div class="section-container">
+            <h2>My CV</h2>
+            <p>You can download my CV here:</p>
+            <a href="#" download="Tanatswa_Muganga_CV.pdf" class="btn btn-primary">Download CV (Placeholder)</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="section-container">
+            <h2>Get in Touch</h2>
+            <p class="contact-description">
+                Whether you want to discuss a project, have a question, or just want to say hello,
+                feel free to reach out. I'm always open to new opportunities and connections.
+            </p>
+            <div class="contact-links">
+                <a href="mailto:tanamuganga@gmail.com" class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>tanamuganga@gmail.com</span>
+                </a>
+                <a href="tel:+4917621987082" class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+49 176 2198 7082</span>
+                </a>
+                <div class="social-links">
+                    <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="social-icon">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" class="social-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Dark mode toggle
+        const themeToggle = document.getElementById('theme-toggle');
+        const icon = themeToggle.querySelector('i');
+
+        themeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            icon.classList.toggle('fa-moon');
+            icon.classList.toggle('fa-sun');
+        });
+
+        // Mobile menu toggle
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.getElementById('nav-links');
+        
+        menuToggle.addEventListener('click', () => {
+            const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+            menuToggle.setAttribute('aria-expanded', !isExpanded);
+            navLinks.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                menuToggle.setAttribute('aria-expanded', 'false');
+            });
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.nav-container')) {
+                navLinks.classList.remove('active');
+                menuToggle.setAttribute('aria-expanded', 'false');
+            }
+        });
+
+        // Intersection Observer for reveal animations
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    observer.unobserve(entry.target); // Stop observing once revealed
+                }
+            });
+        }, observerOptions);
+
+        // Observe all elements with reveal class
+        document.querySelectorAll('.reveal').forEach(element => {
+            observer.observe(element);
+        });
+    </script>
 </body>
 </html>
